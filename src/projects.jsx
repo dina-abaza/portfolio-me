@@ -3,13 +3,6 @@ import { FaProjectDiagram } from "react-icons/fa";
 
 const projectData = [
   {
-    title: "E-Commerce Store",
-    description: "An online store with product catalog, cart system, and user authentication. Users can browse categories, view product details, and manage their cart with ease. The app supports login and registration, and maintains cart state dynamically using Context API. It's styled with responsive Tailwind CSS and simulates a full-stack experience with JSON Server.",
-    techStack: "React.js, Tailwind css, ContextApp, React Router DOM, json-server",
-    github: "https://github.com/dina-abaza/e-commerce2",
-    liveDemo: "https://e-commerce2-dj5t.vercel.app"
-  },
-  {
     title: "Vitrine (e-commerce & dashboard)",
     description: "An online furniture store offering a smooth shopping experience with product browsing, cart, checkout, and Stripe payment integration. Includes an admin dashboard for managing products and tracking orders.",
     techStack: "React.js, Tailwind CSS, zustand, React-Router-Dom, Axios, node.js",
@@ -50,6 +43,13 @@ const projectData = [
     techStack: "Html5, Css, JavaScript, Figma Designs",
     github: "https://github.com/dina-abaza/landing-page",
     liveDemo: "https://landing-page-theta-sable.vercel.app"
+  },
+    {
+    title: "gift shopping & dashboard",
+    description: "A comprehensive E-gift store featuring a secure Google Auth admin dashboard, real-time order tracking, and a seamless delivery management system",
+    techStack: "next, tailwind, node.js, framer-motion, toastify, zustand, lucide, swiper",
+    github: "https://github.com/dina-abaza/grocy-web",
+    liveDemo: "https://grocy-web.vercel.app"
   },
 ];
 
