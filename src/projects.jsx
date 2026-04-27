@@ -39,7 +39,7 @@ const projectData = [
   },
     {
     title: "Landing-Page",
-    description: "A clean, engaging page that highlights the company’s services and identity.",
+    description: "A clean, engaging landing page that highlights the company’s services and brand identity. Built with a fully responsive layout, smooth scroll interactions, and clear call-to-action sections to improve user engagement and conversion.",
     techStack: "Html5, Css, JavaScript, Figma Designs",
     github: "https://github.com/dina-abaza/landing-page",
     liveDemo: "https://landing-page-theta-sable.vercel.app"
@@ -50,6 +50,20 @@ const projectData = [
     techStack: "next, tailwind, node.js, framer-motion, toastify, zustand, lucide, swiper",
     github: "https://github.com/dina-abaza/grocy-web",
     liveDemo: "https://grocy-web.vercel.app"
+  },
+  {
+    title: "Beauty Store & Admin Dashboard",
+    description: "A full-featured beauty products e-commerce platform with a complete admin dashboard and Paymob payment gateway integration for smooth, secure checkout and order management.",
+    techStack: "Next.js, Node.js, Toastify, Tailwind CSS, Redux",
+    github: "https://github.com/dina-abaza/herodex",
+    liveDemo: "https://herodex-navy.vercel.app/"
+  },
+  {
+    title: "Publishing House & Admin Dashboard",
+    description: "A secure digital publishing platform for selling and downloading eBooks, with Stripe and Paymob payments (inside and outside Egypt) plus a complete dashboard for best-seller analytics, revenue tracking, and full CRUD management.",
+    techStack: "Next.js, Node.js, Cloudflare, React Query, Tailwind CSS, Zustand",
+    github: "https://github.com/dina-abaza/aldawlia-publishing",
+    liveDemo: "https://aldawlia-publishing.vercel.app/"
   },
 ];
 
@@ -80,22 +94,31 @@ const Projects = forwardRef((props, ref) => {
               </p>
 
               <div className="flex justify-between text-sm mt-auto pt-4">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-teal-400 hover:underline"
-                >
-                  🔗 GitHub
-                </a>
-                <a
-                  href={project.liveDemo}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-teal-400 hover:underline"
-                >
-                  🚀 Live Demo
-                </a>
+                {project.github ? (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-teal-400 hover:underline"
+                  >
+                    🔗 GitHub
+                  </a>
+                ) : (
+                  <span className="text-gray-500 cursor-not-allowed">🔗 GitHub</span>
+                )}
+
+                {project.liveDemo ? (
+                  <a
+                    href={project.liveDemo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-teal-400 hover:underline"
+                  >
+                    🚀 Live Demo
+                  </a>
+                ) : (
+                  <span className="text-gray-500 cursor-not-allowed">🚀 Live Demo</span>
+                )}
               </div>
             </div>
           ))}
