@@ -9,13 +9,13 @@ const projectData = [
     github: "private",
     liveDemo: "https://bank-reach.vercel.app"
   },
-  {
-    title: "Lawyers Management SaaS",
-    description: "A multi-tenant SaaS platform for law offices covering full legal case management (cases, sessions, contracts, consultations), GPS-based HR attendance, automated invoicing, double-entry accounting, and granular role-based permissions — each office runs in a fully isolated environment.",
-    techStack: "PHP, Laravel 11, MySQL, Laravel Sanctum, Spatie Permission, RESTful API",
-    github: "private",
-    liveDemo: "https://sass-lawyers-multivendor.vercel.app"
-  },
+  // {
+  //   title: "Lawyers Management SaaS",
+  //   description: "A multi-tenant SaaS platform for law offices covering full legal case management (cases, sessions, contracts, consultations), GPS-based HR attendance, automated invoicing, double-entry accounting, and granular role-based permissions — each office runs in a fully isolated environment.",
+  //   techStack: "PHP, Laravel 11, MySQL, Laravel Sanctum, Spatie Permission, RESTful API",
+  //   github: "private",
+  //   liveDemo: "https://sass-lawyers-multivendor.vercel.app"
+  // },
    {
     title: "Publishing House & Admin Dashboard",
     description: "A secure digital publishing platform for selling and downloading eBooks, with Stripe and Paymob payments (inside and outside Egypt) plus a complete dashboard for best-seller analytics, revenue tracking, and full CRUD management.",
