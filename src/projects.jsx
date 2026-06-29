@@ -2,12 +2,26 @@ import React, { forwardRef } from "react";
 import { FaProjectDiagram } from "react-icons/fa";
 
 const projectData = [
+   {
+    title: "BankReach — WhatsApp Campaign Dashboard",
+    description: "A full-featured Arabic RTL dashboard for managing WhatsApp marketing campaigns. Includes customer segmentation, message template management, campaign scheduling and triggering, real-time delivery stats via WebSocket, and a secure JWT auth flow with automatic token refresh.",
+    techStack: "Next.js 15, Tailwind CSS 4, Socket.IO, Axios, Node.js",
+    github: "private",
+    liveDemo: "https://bank-reach.vercel.app"
+  },
   {
-    title: "Vitrine (e-commerce & dashboard)",
-    description: "An online furniture store offering a smooth shopping experience with product browsing, cart, checkout, and Stripe payment integration. Includes an admin dashboard for managing products and tracking orders.",
-    techStack: "React.js, Tailwind CSS, zustand, React-Router-Dom, Axios, node.js",
-    github: "https://github.com/dina-abaza/E-commece-vitrine",
-    liveDemo: "http://e-commece-vitrine-jm7x.vercel.app"
+    title: "Lawyers Management SaaS",
+    description: "A multi-tenant SaaS platform for law offices covering full legal case management (cases, sessions, contracts, consultations), GPS-based HR attendance, automated invoicing, double-entry accounting, and granular role-based permissions — each office runs in a fully isolated environment.",
+    techStack: "PHP, Laravel 11, MySQL, Laravel Sanctum, Spatie Permission, RESTful API",
+    github: "private",
+    liveDemo: "https://sass-lawyers-multivendor.vercel.app"
+  },
+   {
+    title: "Publishing House & Admin Dashboard",
+    description: "A secure digital publishing platform for selling and downloading eBooks, with Stripe and Paymob payments (inside and outside Egypt) plus a complete dashboard for best-seller analytics, revenue tracking, and full CRUD management.",
+    techStack: "Next.js, Node.js, Cloudflare, React Query, Tailwind CSS, Zustand",
+    github: "https://github.com/dina-abaza/aldawlia-publishing",
+    liveDemo: "https://aldawlia-publishing.vercel.app/"
   },
   {
     title: "Restaurant Reservation",
@@ -59,11 +73,11 @@ const projectData = [
     liveDemo: "https://herodex-navy.vercel.app/"
   },
   {
-    title: "Publishing House & Admin Dashboard",
-    description: "A secure digital publishing platform for selling and downloading eBooks, with Stripe and Paymob payments (inside and outside Egypt) plus a complete dashboard for best-seller analytics, revenue tracking, and full CRUD management.",
-    techStack: "Next.js, Node.js, Cloudflare, React Query, Tailwind CSS, Zustand",
-    github: "https://github.com/dina-abaza/aldawlia-publishing",
-    liveDemo: "https://aldawlia-publishing.vercel.app/"
+    title: "Vitrine (e-commerce & dashboard)",
+    description: "An online furniture store offering a smooth shopping experience with product browsing, cart, checkout, and Stripe payment integration. Includes an admin dashboard for managing products and tracking orders.",
+    techStack: "React.js, Tailwind CSS, zustand, React-Router-Dom, Axios, node.js",
+    github: "https://github.com/dina-abaza/E-commece-vitrine",
+    liveDemo: "http://e-commece-vitrine-jm7x.vercel.app"
   },
 ];
 
@@ -94,7 +108,9 @@ const Projects = forwardRef((props, ref) => {
               </p>
 
               <div className="flex justify-between text-sm mt-auto pt-4">
-                {project.github ? (
+                {project.github === "private" ? (
+                  <span className="text-gray-500 cursor-not-allowed">🔒 Private Repo</span>
+                ) : project.github ? (
                   <a
                     href={project.github}
                     target="_blank"

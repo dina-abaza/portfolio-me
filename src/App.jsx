@@ -1,4 +1,3 @@
-
 import React, { useRef } from "react";
 import Header from "./header";
 import Skills from "./skills";
