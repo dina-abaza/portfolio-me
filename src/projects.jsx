@@ -16,6 +16,13 @@ const projectData = [
   //   github: "private",
   //   liveDemo: "https://sass-lawyers-multivendor.vercel.app"
   // },
+  {
+    title: "Single Office — Legal Case Management System",
+    description: "A dedicated (single-tenant) legal case management system for law offices, covering cases, sessions, clients, consultations, contracts and power-of-attorney tracking, document archiving, a full double-entry accounting module (chart of accounts, invoices, receipt/payment vouchers), and staff management with attendance, payroll, leaves and tasks — with granular role-based permissions per team.",
+    techStack: "Next.js 16, React 19, Tailwind CSS 4, React Query, Laravel 12, Sanctum, Spatie Permission",
+    github: "private",
+    liveDemo: "https://single-office.vercel.app"
+  },
    {
     title: "Publishing House & Admin Dashboard",
     description: "A secure digital publishing platform for selling and downloading eBooks, with Stripe and Paymob payments (inside and outside Egypt) plus a complete dashboard for best-seller analytics, revenue tracking, and full CRUD management.",
@@ -45,15 +52,15 @@ const projectData = [
     liveDemo: "https://booking-hotels-ue7g.vercel.app/"
   },
   {
-    title: "Website-Portfolio",
+    title: "website-company",
     description: "Developed a fully responsive company website in collaboration with a UI/UX designer, implementing modern design principles and an intuitive interface. Integrated a functional contact form connected to backend APIs, enhancing client engagement and improving overall website usability.",
     techStack: " Next.js, Tailwind css, Framer-Motion, Figma Designs",
     github: "https://github.com/dina-abaza/portfolio",
     liveDemo: "https://portfolio-taupe-beta-40.vercel.app/"
   },
     {
-    title: "Landing-Page",
-    description: "A clean, engaging landing page that highlights the company’s services and brand identity. Built with a fully responsive layout, smooth scroll interactions, and clear call-to-action sections to improve user engagement and conversion.",
+    title: "Business Intelligence SaaS Website",
+    description: "Designed and developed a responsive marketing website for a Business Intelligence SaaS platform, showcasing real-time dashboards, analytics features, integrations, and product capabilities with a modern, conversion-focused user experience.",
     techStack: "Html5, Css, JavaScript, Figma Designs",
     github: "https://github.com/dina-abaza/landing-page",
     liveDemo: "https://landing-page-theta-sable.vercel.app"
