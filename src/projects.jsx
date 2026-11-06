@@ -86,6 +86,14 @@ const projectData = [
     github: "https://github.com/dina-abaza/E-commece-vitrine",
     liveDemo: "http://e-commece-vitrine-jm7x.vercel.app"
   },
+  {
+    title: "Clinixa Pro (Clinic Management Desktop App)",
+    description: "An offline-first desktop app for managing clinics — patients, appointments, billing, and staff permissions — built as an Electron app with a local SQLite database that syncs securely to a MongoDB Atlas cloud backend.",
+    techStack: "Electron, React, TypeScript, Vite, Express, SQLite, Knex, MongoDB Atlas, Zustand",
+    github: "https://github.com/dina-abaza/clinixa",
+    duration: "1 Month",
+    teamSize: "3 Developers",
+  },
 ];
 
 
@@ -113,6 +121,21 @@ const Projects = forwardRef((props, ref) => {
               <p className="text-sm text-gray-400">
                 <span className="font-semibold text-white">Tech:</span> {project.techStack}
               </p>
+              {(project.duration || project.teamSize) && (
+                <p className="text-sm text-gray-400 mt-1">
+                  {project.duration && (
+                    <>
+                      <span className="font-semibold text-white">Duration:</span> {project.duration}
+                    </>
+                  )}
+                  {project.duration && project.teamSize && "  •  "}
+                  {project.teamSize && (
+                    <>
+                      <span className="font-semibold text-white">Team:</span> {project.teamSize}
+                    </>
+                  )}
+                </p>
+              )}
 
               <div className="flex justify-between text-sm mt-auto pt-4">
                 {project.github === "private" ? (
